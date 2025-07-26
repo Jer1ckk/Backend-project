@@ -1,0 +1,145 @@
+{
+  "backend": {
+    "auth": [
+      {
+        "name": "Server Health Check",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:28.687Z"
+      },
+      {
+        "name": "User Registration",
+        "passed": true,
+        "error": "User already exists",
+        "timestamp": "2025-07-26T06:11:28.695Z"
+      },
+      {
+        "name": "User Login",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.018Z"
+      },
+      {
+        "name": "Get Profile",
+        "passed": false,
+        "error": "Request failed with status code 429",
+        "timestamp": "2025-07-26T06:11:29.021Z"
+      }
+    ],
+    "products": [
+      {
+        "name": "Get All Products",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.031Z"
+      },
+      {
+        "name": "Product Filtering",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.036Z"
+      },
+      {
+        "name": "Product Search",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.042Z"
+      }
+    ],
+    "categories": [
+      {
+        "name": "Get All Categories",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.026Z"
+      }
+    ],
+    "favorites": [
+      {
+        "name": "Get Favorites",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.051Z"
+      }
+    ],
+    "cart": [
+      {
+        "name": "Get Cart",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.059Z"
+      }
+    ]
+  },
+  "frontend": {
+    "components": [
+      {
+        "name": "Component: src/App.jsx",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.059Z"
+      },
+      {
+        "name": "Component: src/components/Homepage.jsx",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.059Z"
+      },
+      {
+        "name": "Component: src/components/Login.jsx",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.059Z"
+      },
+      {
+        "name": "Component: src/components/Register.jsx",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.059Z"
+      },
+      {
+        "name": "Component: src/components/Collection.jsx",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.059Z"
+      },
+      {
+        "name": "Component: src/components/Footer.jsx",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.059Z"
+      },
+      {
+        "name": "Component: src/services/api.js",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.059Z"
+      },
+      {
+        "name": "Component: src/services/productService.js",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.059Z"
+      },
+      {
+        "name": "Component: src/context/AuthContext.jsx",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.059Z"
+      },
+      {
+        "name": "Component: src/hooks/useProducts.js",
+        "passed": true,
+        "error": null,
+        "timestamp": "2025-07-26T06:11:29.059Z"
+      }
+    ],
+    "services": [],
+    "integration": []
+  },
+  "summary": {
+    "total": 20,
+    "passed": 19,
+    "failed": 1
+  }
+}
