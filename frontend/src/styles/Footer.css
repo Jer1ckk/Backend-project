@@ -1,0 +1,193 @@
+.footer {
+  background-color: rgb(6, 2, 49);
+  color: white;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: white;
+}
+
+/* Follow Us Section */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.social-link:hover {
+  color: #d1d5db;
+}
+
+.tiktok-icon,
+.telegram-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Customer Services Section */
+.service-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.service-link:hover {
+  color: #d1d5db;
+}
+
+.service-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #4b5563;
+  border-radius: 50%;
+}
+
+/* We Accept Section */
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.payment-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.payment-card {
+  background-color: white;
+  color: #374151;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 60px;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.payment-card.aba {
+  background-color: #0066cc;
+  color: white;
+}
+
+.payment-card.visa {
+  background-color: #1a1f71;
+  color: white;
+}
+
+.payment-card.mastercard {
+  background-color: #eb001b;
+  color: white;
+}
+
+.payment-card.unionpay {
+  background-color: #e21836;
+  color: white;
+}
+
+.payment-card.jcb {
+  background-color: #0066cc;
+  color: white;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 14px;
+}
+
+.bank-icon,
+.cash-icon {
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .footer {
+    padding: 30px 16px;
+  }
+  
+  .payment-row {
+    justify-content: flex-start;
+  }
+  
+  .payment-card {
+    min-width: 50px;
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-title {
+    font-size: 18px;
+  }
+  
+  .social-link,
+  .service-link {
+    font-size: 14px;
+  }
+  
+  .payment-method {
+    font-size: 12px;
+  }
+}

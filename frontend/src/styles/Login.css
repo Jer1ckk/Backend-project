@@ -1,0 +1,258 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8fafc;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.login-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #e2e8f0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+.required {
+  color: #ef4444;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #6b7280;
+  background-color: #f9fafb;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-input::placeholder {
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: #ffffff;
+  color: #374151;
+}
+
+.password-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-input {
+  padding-right: 48px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.2s ease;
+}
+
+.password-toggle:hover {
+  color: #374151;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 8px;
+}
+
+.login-button:hover {
+  background-color: #1f2937;
+}
+
+.login-button:active {
+  transform: translateY(1px);
+}
+
+.forgot-password {
+  text-align: center;
+  margin: -8px 0 8px 0;
+}
+
+.forgot-link {
+  color: #374151;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.forgot-link:hover {
+  color: #1f2937;
+}
+
+.divider {
+  text-align: center;
+  position: relative;
+  margin: 16px 0;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #e5e7eb;
+}
+
+.divider span {
+  background-color: white;
+  color: #6b7280;
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: white;
+  color: #374151;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.social-button:hover {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.google-icon,
+.facebook-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.google-icon {
+  background: linear-gradient(45deg, #4285f4, #34a853, #fbbc05, #ea4335);
+  color: white;
+}
+
+.facebook-icon {
+  background-color: #1877f2;
+  color: white;
+}
+
+.register-section {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.register-text {
+  color: #374151;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.register-link {
+  color: #374151;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.register-link:hover {
+  color: #1f2937;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 16px;
+  }
+  
+  .login-card {
+    padding: 24px;
+  }
+  
+  .form-input {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* Focus styles for better accessibility */
+.social-button:focus,
+.login-button:focus,
+.form-input:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.password-toggle:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 1px;
+}

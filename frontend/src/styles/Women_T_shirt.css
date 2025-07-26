@@ -1,0 +1,533 @@
+
+.homepage-container {
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  max-width: 1280px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo-bg {
+  background: white;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #5953a5;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-star {
+  color: #5953a5;
+  margin-right: 0.25rem;
+  display: inline-block;
+  font-size: 3rem;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  
+}
+
+.header-row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.search-input {
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  outline: none;
+  background: #fff;
+  width: 150px;
+  font-size: 14px;
+
+}
+
+.icons-area {
+  display: flex;
+  gap: 1rem;
+  background: white;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  font-size: 18px;
+}
+
+.shopping-bag-rel {
+  position: relative;
+}
+
+.shopping-bag-badge {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background: #dc2626;
+  color: #fff;
+  border-radius: 9999px;
+  padding: 0 0.25rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-link, .register-link {
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #374151;
+  font-size: 20px;
+  transition: color 0.2s ease;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.login-link:hover, .register-link:hover {
+  text-decoration: underline;
+  color: #1f2937;
+}
+
+ .category-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  max-width: 768px;
+  width: 20000px;
+  justify-content: center;
+  position: relative;
+  padding: 16px 20px; 
+  background-color: #faf7f6;
+  border-bottom: 1px solid #e5e5e5;
+} 
+
+
+
+.category-group {
+  position: relative;
+}
+
+ .category-btn {
+  min-width: 120px;
+  padding: 1rem 1.5rem ;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  transition: all 0.5s;
+  outline: none;
+  background: white;
+  color: #ef4444;
+  opacity: 0.8;
+  border-color: rgb(140, 140, 175);
+  opacity: 1;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+} 
+
+
+
+.category-btn:hover {
+  border-color: #ef4444;
+  transform: translateY(-2px);
+}
+
+.category-group.open .category-btn {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+
+.dropdown {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.5rem;
+  z-index: 1000;
+  min-width: 200px;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  background-color: white;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+
+.category-group.open .dropdown {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+.dropdown a {
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  font-family: "Times New Roman", Times, serif;
+  display: block;
+  padding: 12px 16px;
+  color: #374151;
+  font-size: 20px;
+}
+
+.dropdown a:hover {
+  color: #5953a5;   
+  background-color: #f9fafb;      
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+ 
+}
+
+.dropdown li {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 0.75rem solid #f3f4f6;
+  border-bottom: 1px solid #f3f4f6;
+  
+}
+
+.dropdown li:last-child {
+  border-bottom: none;
+}
+
+.women-tshirt-container {
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  padding: 20px;
+  background-color: white;
+  min-height: 100vh;
+  width: 90%;
+  
+}
+
+/* Sale Banner */
+.sale-banner {
+  height: 200px;
+  background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+  border-radius: 12px;
+  padding: 40px 30px;
+  margin-bottom: 30px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  margin-top: 5px;
+  
+}
+
+.women-tshirt-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 1rem 3rem 1rem;
+  letter-spacing: 2px;
+  color: white;
+  background-color: #f97070;
+  width: 300px;
+  margin: auto;
+  border-radius: 20px;
+
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+
+}
+
+.sale-text {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.up-to {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.percentage {
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 0.8;
+  margin-bottom: 10px;
+}
+
+.sale-subtitle {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.brand-logos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+/* Products Grid */
+.products-grids {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  
+}
+
+.product-cards {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 50px;
+  
+  
+}
+
+.product-cards:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-image-containers {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  
+}
+
+.product-images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  
+}
+
+.product-cards:hover .product-images {
+  transform: scale(1.05);
+}
+
+.discount-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #ef4444;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 3;
+}
+
+.favorite-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  z-index: 3;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.favorite-btn.active {
+  background: #fef2f2;
+}
+
+.product-info {
+  padding: 16px;
+}
+
+.product-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.sale-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ef4444;
+}
+
+.original-price {
+  font-size: 14px;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.color-options {
+  display: flex;
+  gap: 6px;
+}
+
+.color-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-dot:hover {
+  transform: scale(1.2);
+  border-color: #374151;
+}
+
+.color-dot.white {
+  background-color: #ffffff;
+}
+
+.color-dot.red {
+  background-color: #ef4444;
+}
+
+.color-dot.pink {
+  background-color: #ec4899;
+}
+
+.color-dot.beige {
+  background-color: #d2b48c;
+}
+
+.color-dot.navy {
+  background-color: #1e293b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .women-tshirt-container {
+    padding: 15px;
+  }
+  
+  .sale-banner {
+    padding: 30px 20px;
+  }
+  
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .percentage {
+    font-size: 56px;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  
+  .brand-logos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  
+  .percentage {
+    font-size: 48px;
+  }
+  
+  .up-to {
+    font-size: 20px;
+  }
+  
+  .sale-subtitle {
+    font-size: 16px;
+  }
+}
